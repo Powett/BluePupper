@@ -1,10 +1,10 @@
 This document describes the suggested schema to describe all relevant objects.
 # Versioning
 
-| Version | Edits | Ownership               |
-| ------- | ----- | ----------------------- |
-| v1.0    | -     | Powett p0w3tt@gmail.com |
-|         |       |                         |
+| Version | Edits | Ownership |
+| ------- | ----- | --------- |
+| v1.0    | -     | Powett    |
+|         |       |           |
 
 # High-Level description
 This section describes the identified categories, the objects contained, their properties and possible relationships.
