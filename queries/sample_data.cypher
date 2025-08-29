@@ -254,267 +254,267 @@ UNWIND [
     id: "VLN.00",
     name: "Vulnerability number 00",
     vulnerableAsset: null,
-    fromNode: "Physical ENTREPRISE1 access",
-    toNode: null
+    requiresContext: "Physical ENTREPRISE1 access",
+    grantsAccess: null
   },
   {
     id: "VLN.01",
     name: "Vulnerability number 01",
     vulnerableAsset: null,
-    fromNode: "Vulnerability number 00",
-    toNode: "HEADQUARTERS WAN"
+    requiresContext: "Vulnerability number 00",
+    grantsAccess: "HEADQUARTERS WAN"
   },
   {
     id: "VLN.02",
     name: "Vulnerability number 02",
     vulnerableAsset: null,
-    fromNode: "Physical ENTREPRISE1 access",
-    toNode: "Authenticated access to MAIN.HEADQUARTERS.COM"
+    requiresContext: "Physical ENTREPRISE1 access",
+    grantsAccess: "Authenticated access to MAIN.HEADQUARTERS.COM"
   },
   {
     id: "VLN.03",
     name: "Vulnerability number 03",
     vulnerableAsset: null,
-    fromNode: "ENTERPRISE1 Tombouctou subnet",
-    toNode: null
+    requiresContext: "ENTERPRISE1 Tombouctou subnet",
+    grantsAccess: null
   },
   {
     id: "VLN.04",
     name: "Vulnerability number 04",
     vulnerableAsset: null,
-    fromNode: "ENTERPRISE1 Tombouctou subnet",
-    toNode: null
+    requiresContext: "ENTERPRISE1 Tombouctou subnet",
+    grantsAccess: null
   },
   {
     id: "VLN.05",
     name: "Vulnerability number 05",
     vulnerableAsset: "ENTREPRISE1 Printer VNC Service",
-    fromNode: "Vulnerability number 03",
-    toNode: "VNC access to srv-ops"
+    requiresContext: "Vulnerability number 03",
+    grantsAccess: "VNC access to srv-ops"
   },
   {
     id: "VLN.06",
     name: "Vulnerability number 06",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.07",
     name: "Vulnerability number 07",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.08",
     name: "Vulnerability number 08",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.09",
     name: "Vulnerability number 09",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM SMTP Service",
-    fromNode: "Vulnerability number 03",
-    toNode: "SMTP Open Relay capabilities"
+    requiresContext: "Vulnerability number 03",
+    grantsAccess: "SMTP Open Relay capabilities"
   },
   {
     id: "VLN.10",
     name: "Vulnerability number 10",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM\JEAN.MICHEL",
-    fromNode: "Authenticated access to MAIN.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to MAIN.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.11",
     name: "Vulnerability number 11",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM",
-    fromNode: "Authenticated access to MAIN.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to MAIN.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.12",
     name: "Vulnerability number 12",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM SMB Service",
-    fromNode: "Authenticated access to MAIN.HEADQUARTERS.COM",
-    toNode: "Global compromise of HEADQUARTERS PKI"
+    requiresContext: "Authenticated access to MAIN.HEADQUARTERS.COM",
+    grantsAccess: "Global compromise of HEADQUARTERS PKI"
   },
   {
     id: "VLN.13",
     name: "Vulnerability number 13",
     vulnerableAsset: "MAIN.HEADQUARTERS.COM",
-    fromNode: "Authenticated access to TECH.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to TECH.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.14",
     name: "Vulnerability number 14",
     vulnerableAsset: "TECH.HEADQUARTERS.COM",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.15",
     name: "Vulnerability number 15",
     vulnerableAsset: "TECH.HEADQUARTERS.COM",
-    fromNode: "Authenticated access to TECH.HEADQUARTERS.COM",
-    toNode: "Domain admin access to TECH.HEADQUARTERS.COM"
+    requiresContext: "Authenticated access to TECH.HEADQUARTERS.COM",
+    grantsAccess: "Domain admin access to TECH.HEADQUARTERS.COM"
   },
   {
     id: "VLN.16",
     name: "Vulnerability number 16",
     vulnerableAsset: "PROD.HEADQUARTERS.COM SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.17",
     name: "Vulnerability number 17",
     vulnerableAsset: "PROD.HEADQUARTERS.COM SMB Service",
-    fromNode: "Vulnerability number 16",
-    toNode: "Authenticated access to PROD.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 16",
+    grantsAccess: "Authenticated access to PROD.HEADQUARTERS.COM"
   },
   {
     id: "VLN.18",
     name: "Vulnerability number 18",
     vulnerableAsset: "PROD.HEADQUARTERS.COM",
-    fromNode: "Authenticated access to PROD.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to PROD.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.19",
     name: "Vulnerability number 19",
     vulnerableAsset: "PROD.HEADQUARTERS.COM",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.20",
     name: "Vulnerability number 20",
     vulnerableAsset: "PROD.HEADQUARTERS.COM", // TODO account
-    fromNode: "Authenticated access to PROD.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to PROD.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.21",
     name: "Vulnerability number 21",
     vulnerableAsset: "PROD.HEADQUARTERS.COM",
-    fromNode: "Vulnerability number 19",
-    toNode: "Authenticated access to PROD.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 19",
+    grantsAccess: "Authenticated access to PROD.HEADQUARTERS.COM"
   },
   {
     id: "VLN.22",
     name: "Vulnerability number 22",
     vulnerableAsset: "PROD.HEADQUARTERS.COM", // TODO server
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.23",
     name: "Vulnerability number 23",
     vulnerableAsset: "PROD.HEADQUARTERS.COM", // TODO account
-    fromNode: "Authenticated access to PROD.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to PROD.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.24",
     name: "Vulnerability number 24",
     vulnerableAsset: "PROD.HEADQUARTERS.COM", // TODO account
-    fromNode: "Vulnerability number 19",
-    toNode: "Domain admin access to PROD.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 19",
+    grantsAccess: "Domain admin access to PROD.HEADQUARTERS.COM"
   },
   {
     id: "VLN.25",
     name: "Vulnerability number 25",
     vulnerableAsset: "PROD.HEADQUARTERS.COM", // TODO account
-    fromNode: "Vulnerability number 21",
-    toNode: "Authenticated access to PROD.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 21",
+    grantsAccess: "Authenticated access to PROD.HEADQUARTERS.COM"
   },
   {
     id: "VLN.26",
     name: "Vulnerability number 26",
     vulnerableAsset: "PROD.HEADQUARTERS.COM Domain Controller",
-    fromNode: "Authenticated access to PROD.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to PROD.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.28",
     name: "Vulnerability number 28",
     vulnerableAsset: "PROD.HEADQUARTERS.COM SMB Service",
-    fromNode: "Authenticated access to PROD.HEADQUARTERS.COM",
-    toNode: "Domain admin access to PROD.HEADQUARTERS.COM"
+    requiresContext: "Authenticated access to PROD.HEADQUARTERS.COM",
+    grantsAccess: "Domain admin access to PROD.HEADQUARTERS.COM"
   },
   {
     id: "VLN.29",
     name: "Vulnerability number 29",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM",
-    fromNode: "Authenticated access to MASTER.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to MASTER.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.30",
     name: "Vulnerability number 30",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.31",
     name: "Vulnerability number 31",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.32",
     name: "Vulnerability number 32",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM", // TODO account
-    fromNode: "Vulnerability number 30",
-    toNode: "Domain admin access to MASTER.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 30",
+    grantsAccess: "Domain admin access to MASTER.HEADQUARTERS.COM"
   },
   {
     id: "VLN.33",
     name: "Vulnerability number 33",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM", // TODO account
-    fromNode: "Authenticated access to MASTER.HEADQUARTERS.COM",
-    toNode: null
+    requiresContext: "Authenticated access to MASTER.HEADQUARTERS.COM",
+    grantsAccess: null
   },
   {
     id: "VLN.34",
     name: "Vulnerability number 34",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM", // TODO account
-    fromNode: "Vulnerability number 33",
-    toNode: "Domain admin access to MASTER.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 33",
+    grantsAccess: "Domain admin access to MASTER.HEADQUARTERS.COM"
   },
   {
     id: "VLN.35",
     name: "Vulnerability number 35",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM SMB Service",
-    fromNode: "Vulnerability number 31",
-    toNode: "Authenticated access to MASTER.HEADQUARTERS.COM"
+    requiresContext: "Vulnerability number 31",
+    grantsAccess: "Authenticated access to MASTER.HEADQUARTERS.COM"
   },
   {
     id: "VLN.36",
     name: "Vulnerability number 36",
     vulnerableAsset: "MASTER.HEADQUARTERS.COM SMB Service",
-    fromNode: "Authenticated access to MASTER.HEADQUARTERS.COM",
-    toNode: "Domain admin access to MASTER.HEADQUARTERS.COM"
+    requiresContext: "Authenticated access to MASTER.HEADQUARTERS.COM",
+    grantsAccess: "Domain admin access to MASTER.HEADQUARTERS.COM"
   },
   {
     id: "VLN.37",
     name: "Vulnerability number 37",
     vulnerableAsset: "WERID.LOCAL SMB Service",
-    fromNode: "HEADQUARTERS WAN",
-    toNode: null
+    requiresContext: "HEADQUARTERS WAN",
+    grantsAccess: null
   },
   {
     id: "VLN.38",
     name: "Vulnerability number 38",
     vulnerableAsset: "ENTREPRISE1 Tombouctou",
-    fromNode: "Physical ENTREPRISE1 access",
-    toNode: "Network access to ENTERPRISE2 network"
+    requiresContext: "Physical ENTREPRISE1 access",
+    grantsAccess: "Network access to ENTERPRISE2 network"
   }
 ] AS vulnData
 
@@ -535,18 +535,18 @@ CALL (vulnData) {
   WITH vuln, vulnData
   CALL (vulnData, vuln) {
     WITH vuln, vulnData
-    WHERE vulnData.fromNode IS NOT NULL
-    MATCH (fromNode {name: vulnData.fromNode})
-    MERGE (fromNode)-[:CAN_LEVERAGE]->(vuln)
+    WHERE vulnData.requiresContext IS NOT NULL
+    MATCH (requiresContext {name: vulnData.requiresContext})
+    MERGE (requiresContext)-[:CAN_LEVERAGE]->(vuln)
     RETURN count(*) AS _
   }
 
   WITH vuln, vulnData
   CALL (vulnData, vuln) {
     WITH vuln, vulnData
-    WHERE vulnData.toNode IS NOT NULL
-    MATCH (toNode {name: vulnData.toNode})
-    MERGE (vuln)-[:GRANTS]->(toNode)
+    WHERE vulnData.grantsAccess IS NOT NULL
+    MATCH (grantsAccess {name: vulnData.grantsAccess})
+    MERGE (vuln)-[:GRANTS]->(grantsAccess)
     RETURN count(*) AS _
   }
   RETURN count(*) AS _

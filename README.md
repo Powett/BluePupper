@@ -35,6 +35,37 @@ MATCH (start:Entry), (end:Trophy {type: "AdminAccess"})
 MATCH p = shortestPath((start)-[:IMPLIES|GRANTS|CAN_REACH|CAN_LEVERAGE*]->(end))
 RETURN p
 ```
+### Sanity checks requests
+These requests allow to check for common errors while populating the database:
+- Nodes without properties
+```cypher
+MATCH (n) WHERE size(keys(n)) = 0 RETURN n
+```
+- Orphaned nodes (without any relationships)
+```cypher
+MATCH (n)
+WHERE NOT (n)--()
+RETURN n
+```
+- Untyped nodes
+```cypher
+MATCH (n)
+WHERE size(labels(n)) = 0
+RETURN n
+```
+- `Vulnerability`s that cannot be leveraged
+```cypher
+MATCH (v:Vulnerability)
+WHERE NOT ()-[:CAN_LEVERAGE]->(v)
+RETURN v
+```
+- `Vulnerability`s that are not related to any asset
+```cypher
+MATCH (v:Vulnerability)
+WHERE NOT (v)-[:IS_VULN]->()
+RETURN v
+```
+
 
 # Schema
 Please refer to the schema [here](Schema.md) for details regarding schema and constraints.
